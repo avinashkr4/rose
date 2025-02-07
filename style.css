@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+h1 {
+    color: #d63384;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.rose {
+    width: 150px;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+/* Falling Rose Petals Animation */
+@keyframes fall {
+    0% { top: -100px; opacity: 1; }
+    100% { top: 100vh; opacity: 0; }
+}
+
+.rose-petal {
+    position: absolute;
+    animation: fall 5s linear infinite;
+    width: 40px;
+    height: 40px;
+    background: url('https://www.pngall.com/wp-content/uploads/5/Red-Rose-PNG.png') no-repeat;
+    background-size: cover;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+#loveLetter {
+    background: #fff;
+    border: 2px solid #d63384;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Cursive', sans-serif;
+    color: #d63384;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.letter {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+#specialSurprise {
+    background: #f7e6f0;
+    padding: 20px;
+    border: 2px solid #d63384;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d63384;
+}
